@@ -24,9 +24,9 @@ jobs:
 
       - name: Build
         run: |
-          npm ci
-          npm run build
-          npm run export
+          yarn install --frozen-lockfile
+          yarn run build
+          yarn run export
           touch out/.nojekyll
 
       - name: Deploy
