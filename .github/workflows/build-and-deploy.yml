@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           # update the Node version to meet your needs
-          node-version: 18
+          node-version: 16
           cache: npm
 
       - name: Build
